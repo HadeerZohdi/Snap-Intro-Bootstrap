@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Intro Snap</title>
+  </head>
+
+  <body>
+    <!-- ----------------------------------------------------- NAVBAR -->
+
+    <nav class="navbar navbar-light navbar-expand-lg bg-light p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.svg" alt="snap logo"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end w-50"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img src="images/logo.svg" alt="snap logo" />
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item main-nav dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul
+                  class="dropdown-menu py-4"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="images/icon-todo.svg" alt="" />
+                      Todo List
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="images/icon-calendar.svg" alt="" />
+                      Calender
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        class="me-2"
+                        src="images/icon-reminders.svg"
+                        alt=""
+                      />
+                      Reminders
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-2" src="images/icon-planning.svg" alt="" />
+                      Planning
+                    </a>
+                  </li>
+                  <li></li>
+                </ul>
+              </li>
+
+              <li class="nav-item main-nav dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item main-nav">
+                <a class="nav-link " aria-current="page" href="#"
+                  >Careers</a
+                >
+              </li>
+              <li class="nav-item main-nav">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav justify-content-start pe-3">
+              <li class="nav-item main-nav">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item main-nav">
+                <a class="nav-link ms-5" id="register" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------------------------------------- INTRO -->
+
+
+      <div class="container">
+        <!-------------------------- left section -->
+        <div class="intro d-flex flex-column-reverse flex-lg-row align-items-center">
+          <div class="text-section d-flex flex-column align-items-center align-items-lg-start">
+              <h1>Make <br> Remote Work</h1>
+              <p class="my-4">
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button >Learn more</button>
+
+              <div class="clients">
+                <img class="me-3 me-lg-5" src="images/client-databiz.svg" alt="databiz">
+                <img class="me-3 me-lg-5" src="images/client-audiophile.svg" alt="audiophile">
+                <img class="me-3 me-lg-5" src="images/client-meet.svg" alt="meet">
+                <img class="me-lg-5" src="images/client-maker.svg" alt="maker">
+              </div>
+            </div>
+
+            <!-------------------------- right section -->
+            <div class="img-section">
+              <img
+                class="right-img d-none d-lg-block"
+                src="images/image-hero-desktop.png"
+                alt=""
+              />
+              <img class="d-lg-none w-100" src="images/image-hero-mobile.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
